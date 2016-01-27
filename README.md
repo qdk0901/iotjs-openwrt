@@ -4,7 +4,9 @@ You can find project details in [wiki](http://github.com/Samsung/iotjs/wiki).
 #### How To build
 
 ```
-tools/build.py
+change toolchain path in build.sh
+then run
+./build.sh
 ```
 
 
