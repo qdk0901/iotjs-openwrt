@@ -160,7 +160,7 @@ def init_option():
     parser.add_argument('--buildlib', action='store_true')
 
     parser.add_argument('--target-arch',
-                        choices=['arm', 'mips', 'x86', 'i686', 'x86_64', 'x64'],
+                        choices=['arm', 'mips', 'mipsel', 'x86', 'i686', 'x86_64', 'x64'],
                         default=sys_arch())
 
     parser.add_argument('--target-os',

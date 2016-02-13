@@ -12,13 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include(CMakeForceCompiler)
-
 set(CMAKE_SYSTEM_NAME Openwrt)
-set(CMAKE_SYSTEM_PROCESSOR mips)
+set(CMAKE_SYSTEM_PROCESSOR mipsel)
 
-set(EXTERNAL_CMAKE_C_COMPILER mips-openwrt-linux-gcc)
-set(EXTERNAL_CMAKE_CXX_COMPILER mips-openwrt-linux-g++)
-
-CMAKE_FORCE_C_COMPILER(${EXTERNAL_CMAKE_C_COMPILER} GNU)
-CMAKE_FORCE_CXX_COMPILER(${EXTERNAL_CMAKE_CXX_COMPILER} GNU)
+set(CMAKE_C_COMPILER mipsel-openwrt-linux-gcc)
+set(CMAKE_CXX_COMPILER mipsel-openwrt-linux-g++)
+# FIXME: This could break cross compilation, when the strip is not for the target architecture
+find_program(CMAKE_STRIP NAMES mipsel-openwrt-linux-strip strip)

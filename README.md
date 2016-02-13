@@ -5,6 +5,8 @@ You can find project details in [wiki](http://github.com/Samsung/iotjs/wiki).
 
 ```
 change toolchain path in build.sh
+for mips: change target-arch in build.config to 'mips'
+for mipsel: change target-arch in build.config to 'mipsel'
 then run
 ./build.sh
 ```

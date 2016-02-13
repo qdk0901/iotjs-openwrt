@@ -17,5 +17,5 @@ include(CMakeForceCompiler)
 set(CMAKE_SYSTEM_NAME Openwrt)
 set(CMAKE_SYSTEM_PROCESSOR mips)
 
-SET(CMAKE_C_COMPILER   mipsel-openwrt-linux-gcc)
-SET(CMAKE_CXX_COMPILER mipsel-openwrt-linux-g++)
+SET(CMAKE_C_COMPILER   mips-openwrt-linux-gcc)
+SET(CMAKE_CXX_COMPILER mips-openwrt-linux-g++)

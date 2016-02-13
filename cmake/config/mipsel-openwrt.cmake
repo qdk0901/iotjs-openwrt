@@ -15,10 +15,10 @@
 include(CMakeForceCompiler)
 
 set(CMAKE_SYSTEM_NAME Openwrt)
-set(CMAKE_SYSTEM_PROCESSOR mips)
+set(CMAKE_SYSTEM_PROCESSOR mipsel)
 
-set(EXTERNAL_CMAKE_C_COMPILER mips-openwrt-linux-gcc)
-set(EXTERNAL_CMAKE_CXX_COMPILER mips-openwrt-linux-g++)
+set(EXTERNAL_CMAKE_C_COMPILER mipsel-openwrt-linux-gcc)
+set(EXTERNAL_CMAKE_CXX_COMPILER mipsel-openwrt-linux-g++)
 
 CMAKE_FORCE_C_COMPILER(${EXTERNAL_CMAKE_C_COMPILER} GNU)
 CMAKE_FORCE_CXX_COMPILER(${EXTERNAL_CMAKE_CXX_COMPILER} GNU)
